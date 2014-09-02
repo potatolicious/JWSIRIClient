@@ -1,0 +1,10 @@
+target 'JWSIRIClient', :exclusive => true do
+  pod "JWSIRIClient", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "JWSIRIClient", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
